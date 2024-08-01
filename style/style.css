@@ -15540,6 +15540,25 @@ html.wizard .warning-msg-bdate {
     position: absolute;
     right: 20px;
 }
+.questionnaire_title{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #069ab8;
+}
+.questionnaire{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    margin-top: 20px;
+}
+
 @media(max-width: 380px){
     
     .user_present_all .user__present__icon{
