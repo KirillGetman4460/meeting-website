@@ -15557,4 +15557,14 @@ html.wizard .warning-msg-bdate {
     .user__present{
         gap: 12px;
     }
+    .buttons{
+        padding: 0px;
+        padding: 10px 10px;
+    }
+    .buttons button span{
+        font-size: 18px;
+    }
+    .buttons button span svg{
+        width: 40px;
+    }
 }
