@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/animate.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="header-wrapper">
+            <header class="header ">
+                <div class="header-content">
+                    <div class="wrapper-burger"><button class="menu-btn"><svg height="1em" viewBox="0 0 24 24"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"></path>
+                            </svg></button>
+                        <div class="sidebar__mobile hidden">
+                            <div class="sidebar"><a aria-current="page" class="side-logo active" href="/"><img
+                                        src="/assets/img/logo.png" class="logo__img undefined"></a><span
+                                    class="avatar-with-info sidebar__avatar"><a class="avatar-with-info__container"
+                                        href="/profile/0"><img
+                                            class="avatar avatar--round avatar--with-border avatar-with-info__avatar"
+                                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wgARCABzAHMDAREAAhEBAxEB/8QAHAABAAMAAwEBAAAAAAAAAAAAAAUGBwECAwQI/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAA/fwAAAAAAAAAPIrp4lhPsAAAAB4mYkaD1NLJYAAAAphTAAS5p4AAABmRDAA5NiO4AAAMxIcAA2M7gAAAoRVgAfcawAAAAQBnAALaXkAAAA4MzIYH0Gqn0gAAAApBUATJpoAAAAIUzs+cHJeS1nIAB5FWK+Q4AAJEnSyEoDoZaRwAAAAOTRCwlcM8AAAAABLGoFZIIA6nY6gA4ODg5NDP/8QAOBAAAQMBAwgIBAYDAAAAAAAAAQIDBAUABhESITAxUVOi0RATFSBBcYGhI0JhkRQiMlJjsUBy4f/aAAgBAQABPwD/ABH5DEaOp6Q6hptOtSzgLSr705pZTFYekYfN+gc/azN+4il4PwHkJ2oWFcrU+qQKm0Vw30uEfqRqUnzGjlSWYcJ2U+vJbbTlKNqzWZNYmlx0lLST8Noakjn0xpD8SSmRGdU26g4hSbXfrKKzTMtQCZDeCXUjVjtH0OivxPUCxTUK/lX7gD++7dqeafeJlRVg26eqc8jq98NFel0u3rlbE5KR6JHdSSlQUk4EZwbMr6yOhf7kg6G9LZbvXL+pSr7pHdAJzCzKCiOhB+VIGhvxH6usMSQMzrWHqk8iO7Ro5l1+IwPF0E+Qzn2GivdTzNoCnWxi5HPWDy8efp3bj08rlvVJY/K2OrR9VHX7f3oiAQQc4NryUcUiqANHGO9itseKdqemBDcn1JmE0QFOqycT4bT9rQYTNPp7cNgYIbGH1O0nR38dQZUJn5kpUo+RI5dN1XW2r1xS5mCsUA/UggaOtXjh0ltTYIelEZmknV/tstNmyahNclyl5bi/QAeAA6UlSVBSVFKgcQQcCLUG9zb4TEqqg27qS/qSrz2GwIIxHekSWIkdT8l5DTadalG06/LCCUU+KXf5HTkj7a/6tMvRWZgKTK6lB+VkZPvr97ZySSe9BrlUpyQiLLWG92r8yfsdVot+pKThMhNrG1olJ98bUy8FMqpyGHih7dOZlem306XnW2I7j7qsltCSpRPgBasVeTV56nnVFLQPw2scyBz0aSUqCkkgjOCDgRa6tbXVIK2JSgZLIGKv3p28+i+cz8Pd7qEkhT6wj0Gc6W7Mz8FeWOsqwQ4eqV6/9w6LzRmZM2Ol9JWEoJAxI8bdlwNxxHnYUuDuOI87GlwMD8DiPO3ZkHccR527Lg7jiPO3ZkHccR527Mg7jiPO3ZkHccR527Mg7jiPOxpsLc8R527NhbniPO3Z0Pc8Rt2fERipLRBGcEKPOzBJitkkklAt/8QAFBEBAAAAAAAAAAAAAAAAAAAAcP/aAAgBAgEBPwBh/8QAFBEBAAAAAAAAAAAAAAAAAAAAcP/aAAgBAwEBPwBh/9k="
+                                            alt="Avatar of undefined"></a></span>
+                                <ul class="side-nav gradient-separator gradient-separator--top">
+                                    <li class="side-nav-item"><a class="side-nav__link" href="/me/profile"><span
+                                                class="side-nav__icon"><svg width="1em" height="1em" viewBox="0 0 21 22"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g fill-rule="evenodd">
+                                                        <path
+                                                            d="M15.531 7 12.25 3.719l-8.75 8.75v3.281h3.281L15.531 7Zm2.59-2.59a.871.871 0 0 0 0-1.234L16.074 1.13a.871.871 0 0 0-1.234 0l-1.715 1.715 3.281 3.281 1.715-1.715ZM0 18.375h21v3.5H0z">
+                                                        </path>
+                                                    </g>
+                                                </svg></span>Редагувати анкету</a></li>
+                                    <li class="side-nav-item"><a class="side-nav__link" href="/chats"><span
+                                                class="side-nav__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="1em" height="1em" viewBox="0 0 20 16">
+                                                    <path
+                                                        d="M18.333 3.667H3.667A1.83 1.83 0 0 0 1.843 5.5l-.01 11c0 1.008.825 1.833 1.834 1.833h14.666a1.839 1.839 0 0 0 1.834-1.833v-11a1.839 1.839 0 0 0-1.834-1.833zm0 3.666L11 11.917 3.667 7.333V5.5L11 10.083 18.333 5.5Z"
+                                                        transform="matrix(1.09098 0 0 1.09109 -1.999 -3.998)"
+                                                        style="fill-rule: evenodd; stroke: none; stroke-width: 1;">
+                                                    </path>
+                                                </svg></span>
+                                                Мої повідомлення</a></li>
+                                    <li class="side-nav-item"><a class="side-nav__link" href="/me/likes"><span
+                                                class="side-nav__icon"><svg width="1em" height="1em" viewBox="0 0 24 13"
+                                                    xmlns="http://www.w3.org/2000/svg" class="icon-long">
+                                                    <path
+                                                        d="M8 5H5V2H3v3H0v2h3v3h2V7h3V5Zm10 1c1.66 0 2.99-1.34 2.99-3S19.66 0 18 0c-.32 0-.63.05-.91.14.57.81.9 1.79.9 2.86 0 1.07-.34 2.04-.9 2.86.28.09.59.14.91.14Zm-5 0c1.66 0 2.99-1.34 2.99-3S14.66 0 13 0c-1.66 0-3 1.34-3 3s1.34 3 3 3Zm6.62 2.16C20.45 8.89 21 9.82 21 11v2h3v-2c0-1.54-2.37-2.49-4.38-2.84ZM13 8c-2 0-6 1-6 3v2h12v-2c0-2-4-3-6-3Z"
+                                                        fill-rule="evenodd"></path>
+                                                </svg></span>
+                                                Мої лайки</a></li>
+                                    <li class="side-nav-item"><a class="side-nav__link" href="/me/settings"><span
+                                                class="side-nav__icon"><svg height="1em" viewBox="0 0 24 24" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z">
+                                                    </path>
+                                                </svg></span>Настройки аккаунта</a></li>
+                                    <li class="side-nav-item"><a class="side-nav__link"
+                                            href="/me/guidelines"><span><span class="side-nav__icon"><svg width="1em"
+                                                        height="1em" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <defs>
+                                                            <path id="welcome_svg__a" d="M0 0h20v20H0z"></path>
+                                                        </defs>
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <mask id="welcome_svg__b" fill="#fff">
+                                                                <use xlink:href="#welcome_svg__a"></use>
+                                                            </mask>
+                                                            <path
+                                                                d="M19.167 16.667c0 1.833-1.5 3.333-3.334 3.333H9.75c-.9 0-1.75-.358-2.375-.992l-6.542-6.65s.8-.833 1.084-1.041c.282-.209.412-.219.658-.242.246-.023.35.05.5.133.033.009 3.592 2.05 3.592 2.05V3.333c0-.691.558-1.25 1.25-1.25.691 0 1.25.559 1.25 1.25v5.834H10V1.25C10 .558 10.558 0 11.25 0s1.25.558 1.25 1.25v7.917h.833V2.083c0-.691.559-1.25 1.25-1.25.692 0 1.25.559 1.25 1.25v7.084h.834V4.583c0-.691.558-1.25 1.25-1.25.691 0 1.25.559 1.25 1.25v12.084Z"
+                                                                fill="#000" mask="url(#welcome_svg__b)"></path>
+                                                        </g>
+                                                    </svg></span>Вітання</span></a></li>
+                                </ul><button
+                                    class="btn btn--shadow btn--neutral auth-btn--logout"><span>Війти</span><svg
+                                        width="1em" height="1em" viewBox="0 0 27 18" xmlns="http://www.w3.org/2000/svg"
+                                        class="icon-right">
+                                        <path
+                                            d="M2.75.76h16.5c1.008 0 1.833.824 1.833 1.833V6.25H19.25V2.574H2.75v12.861h16.5V11.75h1.833v3.676a1.823 1.823 0 0 1-1.833 1.815H2.75a1.823 1.823 0 0 1-1.833-1.815V2.593c0-1.018.825-1.834 1.833-1.834Zm20.667 11.907L27.083 9l-3.666-3.667v2.75H14.25v1.834h9.167v2.75Z"
+                                            fill-rule="evenodd"></path>
+                                    </svg></button>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <!-- <a class="header-logo" href="/"><img src="/assets/img/logo.png"
+                            class="logo__img undefined"></a> -->
+                            <h1 class="header_title">Головна</h1>
+                           
+                            <div class="header_icons">
+
+                                <div class="notification_icon">
+                                    <svg fill="#fff" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+         viewBox="0 0 611.999 611.999" xml:space="preserve">
+    <g>
+        <g>
+            <g>
+                <path d="M570.107,500.254c-65.037-29.371-67.511-155.441-67.559-158.622v-84.578c0-81.402-49.742-151.399-120.427-181.203
+                    C381.969,34,347.883,0,306.001,0c-41.883,0-75.968,34.002-76.121,75.849c-70.682,29.804-120.425,99.801-120.425,181.203v84.578
+                    c-0.046,3.181-2.522,129.251-67.561,158.622c-7.409,3.347-11.481,11.412-9.768,19.36c1.711,7.949,8.74,13.626,16.871,13.626
+                    h164.88c3.38,18.594,12.172,35.892,25.619,49.903c17.86,18.608,41.479,28.856,66.502,28.856
+                    c25.025,0,48.644-10.248,66.502-28.856c13.449-14.012,22.241-31.311,25.619-49.903h164.88c8.131,0,15.159-5.676,16.872-13.626
+                    C581.586,511.664,577.516,503.6,570.107,500.254z M484.434,439.859c6.837,20.728,16.518,41.544,30.246,58.866H97.32
+                    c13.726-17.32,23.407-38.135,30.244-58.866H484.434z M306.001,34.515c18.945,0,34.963,12.73,39.975,30.082
+                    c-12.912-2.678-26.282-4.09-39.975-4.09s-27.063,1.411-39.975,4.09C271.039,47.246,287.057,34.515,306.001,34.515z
+                     M143.97,341.736v-84.685c0-89.343,72.686-162.029,162.031-162.029s162.031,72.686,162.031,162.029v84.826
+                    c0.023,2.596,0.427,29.879,7.303,63.465H136.663C143.543,371.724,143.949,344.393,143.97,341.736z M306.001,577.485
+                    c-26.341,0-49.33-18.992-56.709-44.246h113.416C355.329,558.493,332.344,577.485,306.001,577.485z"/>
+                <path d="M306.001,119.235c-74.25,0-134.657,60.405-134.657,134.654c0,9.531,7.727,17.258,17.258,17.258
+                    c9.531,0,17.258-7.727,17.258-17.258c0-55.217,44.923-100.139,100.142-100.139c9.531,0,17.258-7.727,17.258-17.258
+                    C323.259,126.96,315.532,119.235,306.001,119.235z"/>
+            </g>
+        </g>
+    </g>
+    </svg>
+                                </div>
+
+                                <!-- <a
+                        class="btn btn--shadow btn--neutral search-btn search-btn__header" href="/search"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 20 20"
+                            class="icon-left">
+                            <path
+                                d="M13.06 8.364c0 2.59-2.104 4.697-4.69 4.697s-4.69-2.107-4.69-4.697 2.104-4.697 4.69-4.697 4.69 2.107 4.69 4.697zM19 17.113l-4.558-4.565a7.381 7.381 0 0 0 1.298-4.184c0-4.079-3.298-7.381-7.37-7.381S1 4.285 1 8.364c0 4.079 3.298 7.38 7.37 7.38 1.486 0 2.952-.45 4.177-1.3L17.105 19 19 17.113z"
+                                fill-rule="evenodd"></path>
+                        </svg><span>Поиск</span></a> -->
+                            </div>
+                          
+                    <div class="header-right"><button
+                            class="btn-landing btn-landing--red btn-landing--red-glow auth-btn--register">Регистрация</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="wrapper wrapper--user">
+            <div class="sidebar__desktop">
+                <div class="sidebar"><a aria-current="page" class="side-logo active" href="/"><img
+                            src="/assets/img/logo.png" class="logo__img undefined"></a><span
+                        class="avatar-with-info sidebar__avatar"><a class="avatar-with-info__container"
+                            href="/profile/0"><img
+                                class="avatar avatar--round avatar--with-border avatar-with-info__avatar"
+                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wgARCABzAHMDAREAAhEBAxEB/8QAHAABAAMAAwEBAAAAAAAAAAAAAAUGBwECAwQI/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAA/fwAAAAAAAAAPIrp4lhPsAAAAB4mYkaD1NLJYAAAAphTAAS5p4AAABmRDAA5NiO4AAAMxIcAA2M7gAAAoRVgAfcawAAAAQBnAALaXkAAAA4MzIYH0Gqn0gAAAApBUATJpoAAAAIUzs+cHJeS1nIAB5FWK+Q4AAJEnSyEoDoZaRwAAAAOTRCwlcM8AAAAABLGoFZIIA6nY6gA4ODg5NDP/8QAOBAAAQMBAwgIBAYDAAAAAAAAAQIDBAUABhESITAxUVOi0RATFSBBcYGhI0JhkRQiMlJjsUBy4f/aAAgBAQABPwD/ABH5DEaOp6Q6hptOtSzgLSr705pZTFYekYfN+gc/azN+4il4PwHkJ2oWFcrU+qQKm0Vw30uEfqRqUnzGjlSWYcJ2U+vJbbTlKNqzWZNYmlx0lLST8Noakjn0xpD8SSmRGdU26g4hSbXfrKKzTMtQCZDeCXUjVjtH0OivxPUCxTUK/lX7gD++7dqeafeJlRVg26eqc8jq98NFel0u3rlbE5KR6JHdSSlQUk4EZwbMr6yOhf7kg6G9LZbvXL+pSr7pHdAJzCzKCiOhB+VIGhvxH6usMSQMzrWHqk8iO7Ro5l1+IwPF0E+Qzn2GivdTzNoCnWxi5HPWDy8efp3bj08rlvVJY/K2OrR9VHX7f3oiAQQc4NryUcUiqANHGO9itseKdqemBDcn1JmE0QFOqycT4bT9rQYTNPp7cNgYIbGH1O0nR38dQZUJn5kpUo+RI5dN1XW2r1xS5mCsUA/UggaOtXjh0ltTYIelEZmknV/tstNmyahNclyl5bi/QAeAA6UlSVBSVFKgcQQcCLUG9zb4TEqqg27qS/qSrz2GwIIxHekSWIkdT8l5DTadalG06/LCCUU+KXf5HTkj7a/6tMvRWZgKTK6lB+VkZPvr97ZySSe9BrlUpyQiLLWG92r8yfsdVot+pKThMhNrG1olJ98bUy8FMqpyGHih7dOZlem306XnW2I7j7qsltCSpRPgBasVeTV56nnVFLQPw2scyBz0aSUqCkkgjOCDgRa6tbXVIK2JSgZLIGKv3p28+i+cz8Pd7qEkhT6wj0Gc6W7Mz8FeWOsqwQ4eqV6/9w6LzRmZM2Ol9JWEoJAxI8bdlwNxxHnYUuDuOI87GlwMD8DiPO3ZkHccR527Lg7jiPO3ZkHccR527Mg7jiPO3ZkHccR527Mg7jiPOxpsLc8R527NhbniPO3Z0Pc8Rt2fERipLRBGcEKPOzBJitkkklAt/8QAFBEBAAAAAAAAAAAAAAAAAAAAcP/aAAgBAgEBPwBh/8QAFBEBAAAAAAAAAAAAAAAAAAAAcP/aAAgBAwEBPwBh/9k="
+                                alt="Avatar of undefined"></a></span>
+                    <ul class="side-nav gradient-separator gradient-separator--top">
+                        <li class="side-nav-item"><a class="side-nav__link" href="/me/profile"><span
+                                    class="side-nav__icon"><svg width="1em" height="1em" viewBox="0 0 21 22"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g fill-rule="evenodd">
+                                            <path
+                                                d="M15.531 7 12.25 3.719l-8.75 8.75v3.281h3.281L15.531 7Zm2.59-2.59a.871.871 0 0 0 0-1.234L16.074 1.13a.871.871 0 0 0-1.234 0l-1.715 1.715 3.281 3.281 1.715-1.715ZM0 18.375h21v3.5H0z">
+                                            </path>
+                                        </g>
+                                    </svg></span>Редагувати анкету</a></li>
+                        <li class="side-nav-item"><a class="side-nav__link" href="/chats"><span
+                                    class="side-nav__icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 20 16">
+                                        <path
+                                            d="M18.333 3.667H3.667A1.83 1.83 0 0 0 1.843 5.5l-.01 11c0 1.008.825 1.833 1.834 1.833h14.666a1.839 1.839 0 0 0 1.834-1.833v-11a1.839 1.839 0 0 0-1.834-1.833zm0 3.666L11 11.917 3.667 7.333V5.5L11 10.083 18.333 5.5Z"
+                                            transform="matrix(1.09098 0 0 1.09109 -1.999 -3.998)"
+                                            style="fill-rule: evenodd; stroke: none; stroke-width: 1;"></path>
+                                    </svg></span>Мои сообщения</a></li>
+                        <li class="side-nav-item"><a class="side-nav__link" href="/me/likes"><span
+                                    class="side-nav__icon"><svg width="1em" height="1em" viewBox="0 0 24 13"
+                                        xmlns="http://www.w3.org/2000/svg" class="icon-long">
+                                        <path
+                                            d="M8 5H5V2H3v3H0v2h3v3h2V7h3V5Zm10 1c1.66 0 2.99-1.34 2.99-3S19.66 0 18 0c-.32 0-.63.05-.91.14.57.81.9 1.79.9 2.86 0 1.07-.34 2.04-.9 2.86.28.09.59.14.91.14Zm-5 0c1.66 0 2.99-1.34 2.99-3S14.66 0 13 0c-1.66 0-3 1.34-3 3s1.34 3 3 3Zm6.62 2.16C20.45 8.89 21 9.82 21 11v2h3v-2c0-1.54-2.37-2.49-4.38-2.84ZM13 8c-2 0-6 1-6 3v2h12v-2c0-2-4-3-6-3Z"
+                                            fill-rule="evenodd"></path>
+                                    </svg></span>Мои лайки</a></li>
+                        <li class="side-nav-item"><a class="side-nav__link" href="/me/settings"><span
+                                    class="side-nav__icon"><svg height="1em" viewBox="0 0 24 24" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z">
+                                        </path>
+                                    </svg></span>Настройки аккаунта</a></li>
+                        <li class="side-nav-item"><a class="side-nav__link" href="/me/guidelines"><span><span
+                                        class="side-nav__icon"><svg width="1em" height="1em" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path id="welcome_svg__a" d="M0 0h20v20H0z"></path>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <mask id="welcome_svg__b" fill="#fff">
+                                                    <use xlink:href="#welcome_svg__a"></use>
+                                                </mask>
+                                                <path
+                                                    d="M19.167 16.667c0 1.833-1.5 3.333-3.334 3.333H9.75c-.9 0-1.75-.358-2.375-.992l-6.542-6.65s.8-.833 1.084-1.041c.282-.209.412-.219.658-.242.246-.023.35.05.5.133.033.009 3.592 2.05 3.592 2.05V3.333c0-.691.558-1.25 1.25-1.25.691 0 1.25.559 1.25 1.25v5.834H10V1.25C10 .558 10.558 0 11.25 0s1.25.558 1.25 1.25v7.917h.833V2.083c0-.691.559-1.25 1.25-1.25.692 0 1.25.559 1.25 1.25v7.084h.834V4.583c0-.691.558-1.25 1.25-1.25.691 0 1.25.559 1.25 1.25v12.084Z"
+                                                    fill="#000" mask="url(#welcome_svg__b)"></path>
+                                            </g>
+                                        </svg></span>Приветствие</span></a></li>
+                    </ul><button class="btn btn--shadow btn--neutral auth-btn--logout"><span>Выйти</span><svg
+                            width="1em" height="1em" viewBox="0 0 27 18" xmlns="http://www.w3.org/2000/svg"
+                            class="icon-right">
+                            <path
+                                d="M2.75.76h16.5c1.008 0 1.833.824 1.833 1.833V6.25H19.25V2.574H2.75v12.861h16.5V11.75h1.833v3.676a1.823 1.823 0 0 1-1.833 1.815H2.75a1.823 1.823 0 0 1-1.833-1.815V2.593c0-1.018.825-1.834 1.833-1.834Zm20.667 11.907L27.083 9l-3.666-3.667v2.75H14.25v1.834h9.167v2.75Z"
+                                fill-rule="evenodd"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="content">
+               <div class="profile_user">
+                    <div class="photo">
+                        <div class="status">
+                            У мережі
+                        </div>
+                        <div class="photo_content">
+                           
+                            <div class="action_buttons">
+                                <button>
+                                    <span>
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#fff" width="48px" height="46px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.808,11.079C19.829,16.132,12,20.5,12,20.5s-7.829-4.368-8.808-9.421C2.227,6.1,5.066,3.5,8,3.5a4.444,4.444,0,0,1,4,2,4.444,4.444,0,0,1,4-2C18.934,3.5,21.773,6.1,20.808,11.079Z"/></svg>
+                                    </span>
+                                    <span class="button_text">123</span>
+                                </button>
+                                
+                                <button>
+                                    <span>
+                                        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="40px" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            
+                        
+                        </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-100.000000, -255.000000)" fill="#fff">
+                                    <path d="M116,281 C114.832,281 113.704,280.864 112.62,280.633 L107.912,283.463 L107.975,278.824 C104.366,276.654 102,273.066 102,269 C102,262.373 108.268,257 116,257 C123.732,257 130,262.373 130,269 C130,275.628 123.732,281 116,281 L116,281 Z M116,255 C107.164,255 100,261.269 100,269 C100,273.419 102.345,277.354 106,279.919 L106,287 L113.009,282.747 C113.979,282.907 114.977,283 116,283 C124.836,283 132,276.732 132,269 C132,261.269 124.836,255 116,255 L116,255 Z" id="comment-1" sketch:type="MSShapeGroup">
+                        
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                                    </span>
+                                    <span class="button_text">123</span>
+                                </button>
+                                <button>
+                                    <span>
+                                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="45px" height="45px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#fff" class="bi bi-three-dots-vertical">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button>
+                            <span><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg fill="#fff" width="50px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2,21h8a1,1,0,0,0,0-2H3.071A7.011,7.011,0,0,1,10,13a5.044,5.044,0,1,0-3.377-1.337A9.01,9.01,0,0,0,1,20,1,1,0,0,0,2,21ZM10,5A3,3,0,1,1,7,8,3,3,0,0,1,10,5ZM23,16a1,1,0,0,1-1,1H19v3a1,1,0,0,1-2,0V17H14a1,1,0,0,1,0-2h3V12a1,1,0,0,1,2,0v3h3A1,1,0,0,1,23,16Z"/></svg></span>
+                        </button>
+                        <button>
+                            <span>
+                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg  width="50px" height="50px" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.25 5.5C6.25 3.70507 7.70507 2.25 9.5 2.25C10.5052 2.25 11.4038 2.70637 12 3.42322C12.5962 2.70637 13.4948 2.25 14.5 2.25C16.2949 2.25 17.75 3.70507 17.75 5.5C17.75 6.14432 17.5625 6.74485 17.2391 7.25H18C19.5188 7.25 20.75 8.48122 20.75 10V12C20.75 12.8042 20.2076 13.4816 19.4687 13.6865C19.6128 15.5131 19.5293 17.3517 19.2195 19.1597C19.0345 20.2394 18.1576 21.0665 17.069 21.1881L16.1545 21.2903C13.3934 21.5989 10.6066 21.5989 7.84548 21.2903L6.93101 21.1881C5.84239 21.0665 4.96552 20.2394 4.78052 19.1597C4.47069 17.3517 4.38724 15.5131 4.53131 13.6865C3.7924 13.4816 3.25 12.8042 3.25 12V10C3.25 8.48122 4.48122 7.25 6 7.25H6.76091C6.4375 6.74485 6.25 6.14432 6.25 5.5ZM11.25 5.5C11.25 4.5335 10.4665 3.75 9.5 3.75C8.5335 3.75 7.75 4.5335 7.75 5.5C7.75 6.4665 8.5335 7.25 9.5 7.25C10.4665 7.25 11.25 6.4665 11.25 5.5ZM14.5 7.25C15.4665 7.25 16.25 6.4665 16.25 5.5C16.25 4.5335 15.4665 3.75 14.5 3.75C13.5335 3.75 12.75 4.5335 12.75 5.5C12.75 6.4665 13.5335 7.25 14.5 7.25ZM4.75 10C4.75 9.30964 5.30964 8.75 6 8.75H11.25V12.25H5C4.86193 12.25 4.75 12.1381 4.75 12V10ZM12.75 13.75H17.969C18.1093 15.4706 18.0329 17.203 17.741 18.9064C17.6689 19.3274 17.3269 19.65 16.9024 19.6974L15.9879 19.7996C14.9116 19.9199 13.8312 19.9914 12.75 20.014V13.75ZM12.75 12.25H19C19.1381 12.25 19.25 12.1381 19.25 12V10C19.25 9.30964 18.6904 8.75 18 8.75H12.75V12.25ZM11.25 13.75V20.014C10.1688 19.9914 9.08842 19.9199 8.01209 19.7996L7.09762 19.6974C6.67308 19.65 6.33112 19.3274 6.25897 18.9064C5.96708 17.203 5.89074 15.4706 6.03103 13.75H11.25Z" fill="#fff"/>
+</svg>
+                            </span>
+                        </button>
+                        <button>
+                            <span>
+
+                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg  width="50px" height="40px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#fff" class="bi bi-bookmark-plus">
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+  <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
+</svg>
+                            </span>
+                        </button>
+                        <button>
+                            <span>Написати</span>
+                        </button>
+                    </div>
+
+               </div>
+               <div class="user_content">
+                <div class="user">
+                    <div class="user_logo">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="35px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="user_title">agelina</div>
+                </div>
+                <div class="user__present">
+                    <div class="user__present__icon">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="35px" height="35px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FF473E" d="M472.469 389.156L273.237 499.735c-9.558 5.305-25.198 5.305-34.755 0L39.249 389.156c-4.779-2.652-7.168-6.149-7.168-9.645h-2.116V132.489h449.673v247.022c0 3.496-2.389 6.993-7.169 9.645z"></path><path fill="#FF6E83" d="M479.638 132.489v247.022c0 3.497-2.389 6.993-7.168 9.646L273.237 499.735c-4.97 2.758-11.583 4.072-18.132 3.959c.155-123.695 3.671-247.546-.173-371.206h224.706z"></path><path fill="#FFA9BA" d="M238.481 252.712L39.249 142.133c-9.558-5.305-9.558-13.985 0-19.29L238.481 12.265c9.558-5.305 25.198-5.305 34.755 0l199.233 110.579c9.558 5.305 9.558 13.985 0 19.29L273.237 252.712c-9.558 5.305-25.198 5.305-34.756 0z"></path><path fill="#FFD4DE" d="M391.09 74.124a6.502 6.502 0 0 1-3.442 5.681L148.934 207.05a6.445 6.445 0 0 1-1.026.438l-.807.451v237.47a6.5 6.5 0 0 1-9.654 5.684l-40-22.201a6.5 6.5 0 0 1-3.346-5.684V192.123a26.49 26.49 0 0 1 9.913-20.655l.236-.184c.524-.41 1.021-.771 1.532-1.116a27.095 27.095 0 0 1 2.352-1.428l231.74-123.528a6.498 6.498 0 0 1 6.212.053l41.659 23.121a6.502 6.502 0 0 1 3.345 5.738zm22.013 100.531a26.438 26.438 0 0 0-5.148-4.523c-.125-.085-.25-.17-.397-.266a26.054 26.054 0 0 0-1.905-1.129L173.914 45.211a6.495 6.495 0 0 0-6.212.053l-41.659 23.121a6.499 6.499 0 0 0 .097 11.42L364.854 207.05c.332.177.676.323 1.027.439l.806.451v237.47a6.5 6.5 0 0 0 9.654 5.684l40-22.201a6.503 6.503 0 0 0 3.346-5.684V192.123a26.498 26.498 0 0 0-6.584-17.468z"></path><path fill="#FF6E83" d="M335.602 137.083c0 16.311-20.006 28.149-47.569 28.149c-11.241 0-21.222-1.971-29.104-5.409a7.462 7.462 0 0 0-6.345.189c-8.215 4.146-19.108 6.562-31.548 6.562c-27.563 0-47.569-11.838-47.569-28.149c0-8.212 5.072-15.289 13.626-20.294c3.37-1.971 4.785-6.178 3.116-9.707c-6.097-12.894-5.901-24.991 1.577-32.469c3.873-3.873 9.177-5.92 15.34-5.92c4.33 0 9.032 1.023 13.863 2.944a7.61 7.61 0 0 0 9.844-4.142c4.965-11.851 13.18-19.15 23.03-19.15c9.682 0 17.787 7.051 22.776 18.547c1.656 3.816 6.027 5.637 9.872 4.05c5.048-2.083 9.966-3.197 14.482-3.197c7.785 0 12.639 3.219 15.34 5.92c7.351 7.351 7.667 19.164 1.885 31.811c-1.622 3.548-.184 7.746 3.212 9.665c8.882 5.018 14.172 12.217 14.172 20.6z"></path></svg>
+                    </div>
+                    <div class="user__present__icon">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="35px" height="35px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FF473E" d="M472.469 389.156L273.237 499.735c-9.558 5.305-25.198 5.305-34.755 0L39.249 389.156c-4.779-2.652-7.168-6.149-7.168-9.645h-2.116V132.489h449.673v247.022c0 3.496-2.389 6.993-7.169 9.645z"></path><path fill="#FF6E83" d="M479.638 132.489v247.022c0 3.497-2.389 6.993-7.168 9.646L273.237 499.735c-4.97 2.758-11.583 4.072-18.132 3.959c.155-123.695 3.671-247.546-.173-371.206h224.706z"></path><path fill="#FFA9BA" d="M238.481 252.712L39.249 142.133c-9.558-5.305-9.558-13.985 0-19.29L238.481 12.265c9.558-5.305 25.198-5.305 34.755 0l199.233 110.579c9.558 5.305 9.558 13.985 0 19.29L273.237 252.712c-9.558 5.305-25.198 5.305-34.756 0z"></path><path fill="#FFD4DE" d="M391.09 74.124a6.502 6.502 0 0 1-3.442 5.681L148.934 207.05a6.445 6.445 0 0 1-1.026.438l-.807.451v237.47a6.5 6.5 0 0 1-9.654 5.684l-40-22.201a6.5 6.5 0 0 1-3.346-5.684V192.123a26.49 26.49 0 0 1 9.913-20.655l.236-.184c.524-.41 1.021-.771 1.532-1.116a27.095 27.095 0 0 1 2.352-1.428l231.74-123.528a6.498 6.498 0 0 1 6.212.053l41.659 23.121a6.502 6.502 0 0 1 3.345 5.738zm22.013 100.531a26.438 26.438 0 0 0-5.148-4.523c-.125-.085-.25-.17-.397-.266a26.054 26.054 0 0 0-1.905-1.129L173.914 45.211a6.495 6.495 0 0 0-6.212.053l-41.659 23.121a6.499 6.499 0 0 0 .097 11.42L364.854 207.05c.332.177.676.323 1.027.439l.806.451v237.47a6.5 6.5 0 0 0 9.654 5.684l40-22.201a6.503 6.503 0 0 0 3.346-5.684V192.123a26.498 26.498 0 0 0-6.584-17.468z"></path><path fill="#FF6E83" d="M335.602 137.083c0 16.311-20.006 28.149-47.569 28.149c-11.241 0-21.222-1.971-29.104-5.409a7.462 7.462 0 0 0-6.345.189c-8.215 4.146-19.108 6.562-31.548 6.562c-27.563 0-47.569-11.838-47.569-28.149c0-8.212 5.072-15.289 13.626-20.294c3.37-1.971 4.785-6.178 3.116-9.707c-6.097-12.894-5.901-24.991 1.577-32.469c3.873-3.873 9.177-5.92 15.34-5.92c4.33 0 9.032 1.023 13.863 2.944a7.61 7.61 0 0 0 9.844-4.142c4.965-11.851 13.18-19.15 23.03-19.15c9.682 0 17.787 7.051 22.776 18.547c1.656 3.816 6.027 5.637 9.872 4.05c5.048-2.083 9.966-3.197 14.482-3.197c7.785 0 12.639 3.219 15.34 5.92c7.351 7.351 7.667 19.164 1.885 31.811c-1.622 3.548-.184 7.746 3.212 9.665c8.882 5.018 14.172 12.217 14.172 20.6z"></path></svg>
+                    </div>
+                    <div class="user__present__icon">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="35px" height="35px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FF473E" d="M472.469 389.156L273.237 499.735c-9.558 5.305-25.198 5.305-34.755 0L39.249 389.156c-4.779-2.652-7.168-6.149-7.168-9.645h-2.116V132.489h449.673v247.022c0 3.496-2.389 6.993-7.169 9.645z"></path><path fill="#FF6E83" d="M479.638 132.489v247.022c0 3.497-2.389 6.993-7.168 9.646L273.237 499.735c-4.97 2.758-11.583 4.072-18.132 3.959c.155-123.695 3.671-247.546-.173-371.206h224.706z"></path><path fill="#FFA9BA" d="M238.481 252.712L39.249 142.133c-9.558-5.305-9.558-13.985 0-19.29L238.481 12.265c9.558-5.305 25.198-5.305 34.755 0l199.233 110.579c9.558 5.305 9.558 13.985 0 19.29L273.237 252.712c-9.558 5.305-25.198 5.305-34.756 0z"></path><path fill="#FFD4DE" d="M391.09 74.124a6.502 6.502 0 0 1-3.442 5.681L148.934 207.05a6.445 6.445 0 0 1-1.026.438l-.807.451v237.47a6.5 6.5 0 0 1-9.654 5.684l-40-22.201a6.5 6.5 0 0 1-3.346-5.684V192.123a26.49 26.49 0 0 1 9.913-20.655l.236-.184c.524-.41 1.021-.771 1.532-1.116a27.095 27.095 0 0 1 2.352-1.428l231.74-123.528a6.498 6.498 0 0 1 6.212.053l41.659 23.121a6.502 6.502 0 0 1 3.345 5.738zm22.013 100.531a26.438 26.438 0 0 0-5.148-4.523c-.125-.085-.25-.17-.397-.266a26.054 26.054 0 0 0-1.905-1.129L173.914 45.211a6.495 6.495 0 0 0-6.212.053l-41.659 23.121a6.499 6.499 0 0 0 .097 11.42L364.854 207.05c.332.177.676.323 1.027.439l.806.451v237.47a6.5 6.5 0 0 0 9.654 5.684l40-22.201a6.503 6.503 0 0 0 3.346-5.684V192.123a26.498 26.498 0 0 0-6.584-17.468z"></path><path fill="#FF6E83" d="M335.602 137.083c0 16.311-20.006 28.149-47.569 28.149c-11.241 0-21.222-1.971-29.104-5.409a7.462 7.462 0 0 0-6.345.189c-8.215 4.146-19.108 6.562-31.548 6.562c-27.563 0-47.569-11.838-47.569-28.149c0-8.212 5.072-15.289 13.626-20.294c3.37-1.971 4.785-6.178 3.116-9.707c-6.097-12.894-5.901-24.991 1.577-32.469c3.873-3.873 9.177-5.92 15.34-5.92c4.33 0 9.032 1.023 13.863 2.944a7.61 7.61 0 0 0 9.844-4.142c4.965-11.851 13.18-19.15 23.03-19.15c9.682 0 17.787 7.051 22.776 18.547c1.656 3.816 6.027 5.637 9.872 4.05c5.048-2.083 9.966-3.197 14.482-3.197c7.785 0 12.639 3.219 15.34 5.92c7.351 7.351 7.667 19.164 1.885 31.811c-1.622 3.548-.184 7.746 3.212 9.665c8.882 5.018 14.172 12.217 14.172 20.6z"></path></svg>
+                    </div>
+                    <div class="user__share">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="#bfc3c4" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25023 15.0507C7.24196 15.3948 7.46898 15.7004 7.80082 15.7918C8.13266 15.8832 8.48413 15.737 8.65325 15.4372L9.55555 13.8377C10.6256 11.9407 12.7558 10.9015 14.9095 11.2256L15.0589 11.2481C15.0857 11.9259 15.1238 12.6035 15.1731 13.2804L15.241 14.211C15.2961 14.9678 16.14 15.3909 16.7795 14.9823C18.8771 13.6419 20.7007 11.9149 22.153 9.8931L22.6091 9.25816C22.797 8.99669 22.797 8.64451 22.6091 8.38303L22.153 7.7481C20.7007 5.72634 18.8771 3.99925 16.7795 2.65889C16.14 2.25031 15.2961 2.67338 15.241 3.43019L15.1731 4.36083C15.1334 4.90656 15.1009 5.45269 15.0757 5.99907L14.0575 5.99907C10.3928 5.99907 7.39756 8.92317 7.30947 12.5868L7.25023 15.0507ZM15.1328 9.74232C12.7135 9.3782 10.3172 10.3522 8.83295 12.2306C9.09457 9.56748 11.3393 7.49907 14.0575 7.49907L15.7962 7.49907C16.2005 7.49907 16.532 7.17871 16.5458 6.77471C16.5721 6.00591 16.6132 5.23749 16.6692 4.46989L16.6746 4.39543C18.3181 5.55709 19.7583 6.98548 20.9348 8.62323L21.0766 8.8206L20.9348 9.01797C19.7583 10.6557 18.3181 12.0841 16.6746 13.2458L16.6692 13.1713C16.6062 12.3074 16.562 11.4425 16.5366 10.5772C16.5259 10.2146 16.2573 9.91156 15.8985 9.85757L15.1328 9.74232Z" fill="#bfc3c4"/>
+    <path d="M19.6414 17.4113C19.7593 16.403 19.8425 15.3916 19.8911 14.379C19.8964 14.2694 19.9461 14.1667 20.0283 14.0941C20.3917 13.7733 20.7438 13.44 21.0839 13.0948C21.2119 12.9649 21.4354 13.0557 21.4315 13.238C21.4003 14.6899 21.3002 16.1407 21.1312 17.5855C20.8946 19.6081 19.2703 21.1931 17.2583 21.418C13.7917 21.8054 10.2083 21.8054 6.74177 21.418C4.72971 21.1931 3.10538 19.6081 2.86883 17.5855C2.45429 14.0412 2.45429 10.4607 2.86883 6.9164C3.10538 4.89387 4.72971 3.30886 6.74177 3.08399C9.03274 2.82794 11.3747 2.7411 13.7003 2.82349C13.8961 2.83042 14.0309 3.0221 14.0065 3.2165C14.0014 3.25698 13.9973 3.29793 13.9943 3.33932L13.943 4.04314C13.9312 4.20473 13.7933 4.32767 13.6314 4.32199C11.3843 4.24315 9.12118 4.32739 6.90838 4.5747C5.57827 4.72336 4.51278 5.77298 4.35867 7.09065C3.95767 10.5192 3.95767 13.9828 4.35867 17.4113C4.51278 18.729 5.57827 19.7786 6.90838 19.9272C10.2642 20.3023 13.7358 20.3023 17.0916 19.9272C18.4218 19.7786 19.4872 18.729 19.6414 17.4113Z" fill="#bfc3c4"/>
+    </svg>
+                    </div>
+
+                </div>
+            </div>
+            <div class="user_note">
+                Lorem ipsum dolor sit amet consectetur
+            </div>
+            <div class="user_content_status">
+                <div class="user_status_like">
+                    <span>
+                        <?xml version="1.0" encoding="utf-8"?>
+
+<svg width="25px" height="25px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="icomoon-ignore">
+</g>
+<path d="M21.886 5.115c3.521 0 6.376 2.855 6.376 6.376 0 1.809-0.754 3.439-1.964 4.6l-10.297 10.349-10.484-10.536c-1.1-1.146-1.778-2.699-1.778-4.413 0-3.522 2.855-6.376 6.376-6.376 2.652 0 4.925 1.62 5.886 3.924 0.961-2.304 3.234-3.924 5.886-3.924zM21.886 4.049c-2.345 0-4.499 1.089-5.886 2.884-1.386-1.795-3.54-2.884-5.886-2.884-4.104 0-7.442 3.339-7.442 7.442 0 1.928 0.737 3.758 2.075 5.152l11.253 11.309 11.053-11.108c1.46-1.402 2.275-3.308 2.275-5.352 0-4.104-3.339-7.442-7.442-7.442v0z" fill="#bfc3c4">
+
+</path>
+</svg>
+                    </span>
+                    <span class="user_status_text">
+                        5
+                    </span>
+                </div>
+                <div class="user_status_comments">
+                    <span>
+                        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="25px" height="25px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            
+                        
+                        </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="#bfc3c4" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-100.000000, -255.000000)" fill="#000000">
+                                    <path d="M116,281 C114.832,281 113.704,280.864 112.62,280.633 L107.912,283.463 L107.975,278.824 C104.366,276.654 102,273.066 102,269 C102,262.373 108.268,257 116,257 C123.732,257 130,262.373 130,269 C130,275.628 123.732,281 116,281 L116,281 Z M116,255 C107.164,255 100,261.269 100,269 C100,273.419 102.345,277.354 106,279.919 L106,287 L113.009,282.747 C113.979,282.907 114.977,283 116,283 C124.836,283 132,276.732 132,269 C132,261.269 124.836,255 116,255 L116,255 Z" id="comment-1" sketch:type="MSShapeGroup">
+                        
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="user_status_text">
+                        5
+                    </span>
+                </div>
+                <div class="user_status_all">
+                    <span>
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="25px" height="25px" viewBox="0 -2 24 24" id="meteor-icon-kit__regular-comment" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 2C3.34315 2 2 3.34315 2 5V17.9868L5.64242 15H19C20.6569 15 22 13.6569 22 12V5C22 3.34315 20.6569 2 19 2H5zM6.35758 17L3.26816 19.5333C2.41403 20.2337 1.15385 20.1091 0.453464 19.2549C0.160246 18.8974 0 18.4492 0 17.9868V5C0 2.23858 2.23858 0 5 0H19C21.7614 0 24 2.23858 24 5V12C24 14.7614 21.7614 17 19 17H6.35758z" fill="#758CA3"/></svg>
+                    </span>
+                    <span class="user_status_text">
+                        Усі статуси
+                    </span>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn_navigation active">
+                    Профиль
+                </button>
+                <button class="btn_navigation">
+                    Анкета
+                </button>
+                <button class="btn_navigation">
+                    Активнисть
+                </button>
+            </div>
+
+            <div class="user_navigation">
+                <div class="user_navigation_content">
+                    <button class="user_navigation_bnt active">
+                        <span class="user_navigation_icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<polygon points="22,16.8 22,26 6,26 6,10 15.2,10 17.2,8 4,8 4,28 24,28 24,14.8 "/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M16.5,18.3L13,19l0.7-3.5l9.9-9.9
+	c0.8-0.8,2-0.8,2.8,0l0,0c0.8,0.8,0.8,2,0,2.8L16.5,18.3z"/>
+</svg>
+                        </span>
+                        <span class="user_navigation_text">
+                            Блог
+                        </span>
+                        <span class="user_navigation_all">
+                            33
+                        </span>
+                        
+                    </button>
+                    <button class="user_navigation_bnt">
+                        <span class="user_navigation_icon">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 19C9 20.1046 7.65685 21 6 21C4.34315 21 3 20.1046 3 19C3 17.8954 4.34315 17 6 17C7.65685 17 9 17.8954 9 19ZM9 19V5L21 3V17M21 17C21 18.1046 19.6569 19 18 19C16.3431 19 15 18.1046 15 17C15 15.8954 16.3431 15 18 15C19.6569 15 21 15.8954 21 17ZM9 9L21 7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        </span>
+                        <span class="user_navigation_text">
+                            Музика
+                        </span>
+                        <span class="user_navigation_all">
+                            33
+                        </span>
+                    </button>
+                    <button class="user_navigation_bnt">
+                        <span class="user_navigation_icon">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        </span>
+                        <span class="user_navigation_text">
+                            Відео
+                        </span>
+                        <span class="user_navigation_all">
+                            33
+                        </span>
+                    </button>
+                    <button class="user_navigation_bnt">
+                        <span class="user_navigation_icon">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.8159 20.6077C16.8509 18.5502 20 15.1429 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11C4 15.1429 7.14909 18.5502 11.1841 20.6077C11.6968 20.8691 12.3032 20.8691 12.8159 20.6077Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8C13.6569 8 15 9.34315 15 11Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        </span>
+                        <span class="user_navigation_text">
+                            Додаткові послуги
+                        </span>
+                        <span class="user_navigation_all">
+                            33
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="user_present_all">
+                <div class="user__present__icon">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="45px" height="45px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FF473E" d="M472.469 389.156L273.237 499.735c-9.558 5.305-25.198 5.305-34.755 0L39.249 389.156c-4.779-2.652-7.168-6.149-7.168-9.645h-2.116V132.489h449.673v247.022c0 3.496-2.389 6.993-7.169 9.645z"></path><path fill="#FF6E83" d="M479.638 132.489v247.022c0 3.497-2.389 6.993-7.168 9.646L273.237 499.735c-4.97 2.758-11.583 4.072-18.132 3.959c.155-123.695 3.671-247.546-.173-371.206h224.706z"></path><path fill="#FFA9BA" d="M238.481 252.712L39.249 142.133c-9.558-5.305-9.558-13.985 0-19.29L238.481 12.265c9.558-5.305 25.198-5.305 34.755 0l199.233 110.579c9.558 5.305 9.558 13.985 0 19.29L273.237 252.712c-9.558 5.305-25.198 5.305-34.756 0z"></path><path fill="#FFD4DE" d="M391.09 74.124a6.502 6.502 0 0 1-3.442 5.681L148.934 207.05a6.445 6.445 0 0 1-1.026.438l-.807.451v237.47a6.5 6.5 0 0 1-9.654 5.684l-40-22.201a6.5 6.5 0 0 1-3.346-5.684V192.123a26.49 26.49 0 0 1 9.913-20.655l.236-.184c.524-.41 1.021-.771 1.532-1.116a27.095 27.095 0 0 1 2.352-1.428l231.74-123.528a6.498 6.498 0 0 1 6.212.053l41.659 23.121a6.502 6.502 0 0 1 3.345 5.738zm22.013 100.531a26.438 26.438 0 0 0-5.148-4.523c-.125-.085-.25-.17-.397-.266a26.054 26.054 0 0 0-1.905-1.129L173.914 45.211a6.495 6.495 0 0 0-6.212.053l-41.659 23.121a6.499 6.499 0 0 0 .097 11.42L364.854 207.05c.332.177.676.323 1.027.439l.806.451v237.47a6.5 6.5 0 0 0 9.654 5.684l40-22.201a6.503 6.503 0 0 0 3.346-5.684V192.123a26.498 26.498 0 0 0-6.584-17.468z"></path><path fill="#FF6E83" d="M335.602 137.083c0 16.311-20.006 28.149-47.569 28.149c-11.241 0-21.222-1.971-29.104-5.409a7.462 7.462 0 0 0-6.345.189c-8.215 4.146-19.108 6.562-31.548 6.562c-27.563 0-47.569-11.838-47.569-28.149c0-8.212 5.072-15.289 13.626-20.294c3.37-1.971 4.785-6.178 3.116-9.707c-6.097-12.894-5.901-24.991 1.577-32.469c3.873-3.873 9.177-5.92 15.34-5.92c4.33 0 9.032 1.023 13.863 2.944a7.61 7.61 0 0 0 9.844-4.142c4.965-11.851 13.18-19.15 23.03-19.15c9.682 0 17.787 7.051 22.776 18.547c1.656 3.816 6.027 5.637 9.872 4.05c5.048-2.083 9.966-3.197 14.482-3.197c7.785 0 12.639 3.219 15.34 5.92c7.351 7.351 7.667 19.164 1.885 31.811c-1.622 3.548-.184 7.746 3.212 9.665c8.882 5.018 14.172 12.217 14.172 20.6z"></path></svg>
+                </div>
+                <div class="user__present__icon">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="45px" height="45px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FF473E" d="M472.469 389.156L273.237 499.735c-9.558 5.305-25.198 5.305-34.755 0L39.249 389.156c-4.779-2.652-7.168-6.149-7.168-9.645h-2.116V132.489h449.673v247.022c0 3.496-2.389 6.993-7.169 9.645z"></path><path fill="#FF6E83" d="M479.638 132.489v247.022c0 3.497-2.389 6.993-7.168 9.646L273.237 499.735c-4.97 2.758-11.583 4.072-18.132 3.959c.155-123.695 3.671-247.546-.173-371.206h224.706z"></path><path fill="#FFA9BA" d="M238.481 252.712L39.249 142.133c-9.558-5.305-9.558-13.985 0-19.29L238.481 12.265c9.558-5.305 25.198-5.305 34.755 0l199.233 110.579c9.558 5.305 9.558 13.985 0 19.29L273.237 252.712c-9.558 5.305-25.198 5.305-34.756 0z"></path><path fill="#FFD4DE" d="M391.09 74.124a6.502 6.502 0 0 1-3.442 5.681L148.934 207.05a6.445 6.445 0 0 1-1.026.438l-.807.451v237.47a6.5 6.5 0 0 1-9.654 5.684l-40-22.201a6.5 6.5 0 0 1-3.346-5.684V192.123a26.49 26.49 0 0 1 9.913-20.655l.236-.184c.524-.41 1.021-.771 1.532-1.116a27.095 27.095 0 0 1 2.352-1.428l231.74-123.528a6.498 6.498 0 0 1 6.212.053l41.659 23.121a6.502 6.502 0 0 1 3.345 5.738zm22.013 100.531a26.438 26.438 0 0 0-5.148-4.523c-.125-.085-.25-.17-.397-.266a26.054 26.054 0 0 0-1.905-1.129L173.914 45.211a6.495 6.495 0 0 0-6.212.053l-41.659 23.121a6.499 6.499 0 0 0 .097 11.42L364.854 207.05c.332.177.676.323 1.027.439l.806.451v237.47a6.5 6.5 0 0 0 9.654 5.684l40-22.201a6.503 6.503 0 0 0 3.346-5.684V192.123a26.498 26.498 0 0 0-6.584-17.468z"></path><path fill="#FF6E83" d="M335.602 137.083c0 16.311-20.006 28.149-47.569 28.149c-11.241 0-21.222-1.971-29.104-5.409a7.462 7.462 0 0 0-6.345.189c-8.215 4.146-19.108 6.562-31.548 6.562c-27.563 0-47.569-11.838-47.569-28.149c0-8.212 5.072-15.289 13.626-20.294c3.37-1.971 4.785-6.178 3.116-9.707c-6.097-12.894-5.901-24.991 1.577-32.469c3.873-3.873 9.177-5.92 15.34-5.92c4.33 0 9.032 1.023 13.863 2.944a7.61 7.61 0 0 0 9.844-4.142c4.965-11.851 13.18-19.15 23.03-19.15c9.682 0 17.787 7.051 22.776 18.547c1.656 3.816 6.027 5.637 9.872 4.05c5.048-2.083 9.966-3.197 14.482-3.197c7.785 0 12.639 3.219 15.34 5.92c7.351 7.351 7.667 19.164 1.885 31.811c-1.622 3.548-.184 7.746 3.212 9.665c8.882 5.018 14.172 12.217 14.172 20.6z"></path></svg>
+                </div>
+                <div class="user__present__icon">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="45px" height="45px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FF473E" d="M472.469 389.156L273.237 499.735c-9.558 5.305-25.198 5.305-34.755 0L39.249 389.156c-4.779-2.652-7.168-6.149-7.168-9.645h-2.116V132.489h449.673v247.022c0 3.496-2.389 6.993-7.169 9.645z"></path><path fill="#FF6E83" d="M479.638 132.489v247.022c0 3.497-2.389 6.993-7.168 9.646L273.237 499.735c-4.97 2.758-11.583 4.072-18.132 3.959c.155-123.695 3.671-247.546-.173-371.206h224.706z"></path><path fill="#FFA9BA" d="M238.481 252.712L39.249 142.133c-9.558-5.305-9.558-13.985 0-19.29L238.481 12.265c9.558-5.305 25.198-5.305 34.755 0l199.233 110.579c9.558 5.305 9.558 13.985 0 19.29L273.237 252.712c-9.558 5.305-25.198 5.305-34.756 0z"></path><path fill="#FFD4DE" d="M391.09 74.124a6.502 6.502 0 0 1-3.442 5.681L148.934 207.05a6.445 6.445 0 0 1-1.026.438l-.807.451v237.47a6.5 6.5 0 0 1-9.654 5.684l-40-22.201a6.5 6.5 0 0 1-3.346-5.684V192.123a26.49 26.49 0 0 1 9.913-20.655l.236-.184c.524-.41 1.021-.771 1.532-1.116a27.095 27.095 0 0 1 2.352-1.428l231.74-123.528a6.498 6.498 0 0 1 6.212.053l41.659 23.121a6.502 6.502 0 0 1 3.345 5.738zm22.013 100.531a26.438 26.438 0 0 0-5.148-4.523c-.125-.085-.25-.17-.397-.266a26.054 26.054 0 0 0-1.905-1.129L173.914 45.211a6.495 6.495 0 0 0-6.212.053l-41.659 23.121a6.499 6.499 0 0 0 .097 11.42L364.854 207.05c.332.177.676.323 1.027.439l.806.451v237.47a6.5 6.5 0 0 0 9.654 5.684l40-22.201a6.503 6.503 0 0 0 3.346-5.684V192.123a26.498 26.498 0 0 0-6.584-17.468z"></path><path fill="#FF6E83" d="M335.602 137.083c0 16.311-20.006 28.149-47.569 28.149c-11.241 0-21.222-1.971-29.104-5.409a7.462 7.462 0 0 0-6.345.189c-8.215 4.146-19.108 6.562-31.548 6.562c-27.563 0-47.569-11.838-47.569-28.149c0-8.212 5.072-15.289 13.626-20.294c3.37-1.971 4.785-6.178 3.116-9.707c-6.097-12.894-5.901-24.991 1.577-32.469c3.873-3.873 9.177-5.92 15.34-5.92c4.33 0 9.032 1.023 13.863 2.944a7.61 7.61 0 0 0 9.844-4.142c4.965-11.851 13.18-19.15 23.03-19.15c9.682 0 17.787 7.051 22.776 18.547c1.656 3.816 6.027 5.637 9.872 4.05c5.048-2.083 9.966-3.197 14.482-3.197c7.785 0 12.639 3.219 15.34 5.92c7.351 7.351 7.667 19.164 1.885 31.811c-1.622 3.548-.184 7.746 3.212 9.665c8.882 5.018 14.172 12.217 14.172 20.6z"></path></svg>
+                </div>
+                <div class="user__present__icon">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="45px" height="45px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FF473E" d="M472.469 389.156L273.237 499.735c-9.558 5.305-25.198 5.305-34.755 0L39.249 389.156c-4.779-2.652-7.168-6.149-7.168-9.645h-2.116V132.489h449.673v247.022c0 3.496-2.389 6.993-7.169 9.645z"></path><path fill="#FF6E83" d="M479.638 132.489v247.022c0 3.497-2.389 6.993-7.168 9.646L273.237 499.735c-4.97 2.758-11.583 4.072-18.132 3.959c.155-123.695 3.671-247.546-.173-371.206h224.706z"></path><path fill="#FFA9BA" d="M238.481 252.712L39.249 142.133c-9.558-5.305-9.558-13.985 0-19.29L238.481 12.265c9.558-5.305 25.198-5.305 34.755 0l199.233 110.579c9.558 5.305 9.558 13.985 0 19.29L273.237 252.712c-9.558 5.305-25.198 5.305-34.756 0z"></path><path fill="#FFD4DE" d="M391.09 74.124a6.502 6.502 0 0 1-3.442 5.681L148.934 207.05a6.445 6.445 0 0 1-1.026.438l-.807.451v237.47a6.5 6.5 0 0 1-9.654 5.684l-40-22.201a6.5 6.5 0 0 1-3.346-5.684V192.123a26.49 26.49 0 0 1 9.913-20.655l.236-.184c.524-.41 1.021-.771 1.532-1.116a27.095 27.095 0 0 1 2.352-1.428l231.74-123.528a6.498 6.498 0 0 1 6.212.053l41.659 23.121a6.502 6.502 0 0 1 3.345 5.738zm22.013 100.531a26.438 26.438 0 0 0-5.148-4.523c-.125-.085-.25-.17-.397-.266a26.054 26.054 0 0 0-1.905-1.129L173.914 45.211a6.495 6.495 0 0 0-6.212.053l-41.659 23.121a6.499 6.499 0 0 0 .097 11.42L364.854 207.05c.332.177.676.323 1.027.439l.806.451v237.47a6.5 6.5 0 0 0 9.654 5.684l40-22.201a6.503 6.503 0 0 0 3.346-5.684V192.123a26.498 26.498 0 0 0-6.584-17.468z"></path><path fill="#FF6E83" d="M335.602 137.083c0 16.311-20.006 28.149-47.569 28.149c-11.241 0-21.222-1.971-29.104-5.409a7.462 7.462 0 0 0-6.345.189c-8.215 4.146-19.108 6.562-31.548 6.562c-27.563 0-47.569-11.838-47.569-28.149c0-8.212 5.072-15.289 13.626-20.294c3.37-1.971 4.785-6.178 3.116-9.707c-6.097-12.894-5.901-24.991 1.577-32.469c3.873-3.873 9.177-5.92 15.34-5.92c4.33 0 9.032 1.023 13.863 2.944a7.61 7.61 0 0 0 9.844-4.142c4.965-11.851 13.18-19.15 23.03-19.15c9.682 0 17.787 7.051 22.776 18.547c1.656 3.816 6.027 5.637 9.872 4.05c5.048-2.083 9.966-3.197 14.482-3.197c7.785 0 12.639 3.219 15.34 5.92c7.351 7.351 7.667 19.164 1.885 31.811c-1.622 3.548-.184 7.746 3.212 9.665c8.882 5.018 14.172 12.217 14.172 20.6z"></path></svg>
+                </div>
+                <div class="user__present__icon">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="45px" height="45px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--fxemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FF473E" d="M472.469 389.156L273.237 499.735c-9.558 5.305-25.198 5.305-34.755 0L39.249 389.156c-4.779-2.652-7.168-6.149-7.168-9.645h-2.116V132.489h449.673v247.022c0 3.496-2.389 6.993-7.169 9.645z"></path><path fill="#FF6E83" d="M479.638 132.489v247.022c0 3.497-2.389 6.993-7.168 9.646L273.237 499.735c-4.97 2.758-11.583 4.072-18.132 3.959c.155-123.695 3.671-247.546-.173-371.206h224.706z"></path><path fill="#FFA9BA" d="M238.481 252.712L39.249 142.133c-9.558-5.305-9.558-13.985 0-19.29L238.481 12.265c9.558-5.305 25.198-5.305 34.755 0l199.233 110.579c9.558 5.305 9.558 13.985 0 19.29L273.237 252.712c-9.558 5.305-25.198 5.305-34.756 0z"></path><path fill="#FFD4DE" d="M391.09 74.124a6.502 6.502 0 0 1-3.442 5.681L148.934 207.05a6.445 6.445 0 0 1-1.026.438l-.807.451v237.47a6.5 6.5 0 0 1-9.654 5.684l-40-22.201a6.5 6.5 0 0 1-3.346-5.684V192.123a26.49 26.49 0 0 1 9.913-20.655l.236-.184c.524-.41 1.021-.771 1.532-1.116a27.095 27.095 0 0 1 2.352-1.428l231.74-123.528a6.498 6.498 0 0 1 6.212.053l41.659 23.121a6.502 6.502 0 0 1 3.345 5.738zm22.013 100.531a26.438 26.438 0 0 0-5.148-4.523c-.125-.085-.25-.17-.397-.266a26.054 26.054 0 0 0-1.905-1.129L173.914 45.211a6.495 6.495 0 0 0-6.212.053l-41.659 23.121a6.499 6.499 0 0 0 .097 11.42L364.854 207.05c.332.177.676.323 1.027.439l.806.451v237.47a6.5 6.5 0 0 0 9.654 5.684l40-22.201a6.503 6.503 0 0 0 3.346-5.684V192.123a26.498 26.498 0 0 0-6.584-17.468z"></path><path fill="#FF6E83" d="M335.602 137.083c0 16.311-20.006 28.149-47.569 28.149c-11.241 0-21.222-1.971-29.104-5.409a7.462 7.462 0 0 0-6.345.189c-8.215 4.146-19.108 6.562-31.548 6.562c-27.563 0-47.569-11.838-47.569-28.149c0-8.212 5.072-15.289 13.626-20.294c3.37-1.971 4.785-6.178 3.116-9.707c-6.097-12.894-5.901-24.991 1.577-32.469c3.873-3.873 9.177-5.92 15.34-5.92c4.33 0 9.032 1.023 13.863 2.944a7.61 7.61 0 0 0 9.844-4.142c4.965-11.851 13.18-19.15 23.03-19.15c9.682 0 17.787 7.051 22.776 18.547c1.656 3.816 6.027 5.637 9.872 4.05c5.048-2.083 9.966-3.197 14.482-3.197c7.785 0 12.639 3.219 15.34 5.92c7.351 7.351 7.667 19.164 1.885 31.811c-1.622 3.548-.184 7.746 3.212 9.665c8.882 5.018 14.172 12.217 14.172 20.6z"></path></svg>
+                </div>
+            </div>
+            <footer class="footer_user">
+                <div class="footer_content">
+                    <div class="footer_status">
+                        <div class="footer_icon">
+                            <?xml version="1.0" encoding="utf-8"?>
+    
+    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1251_98416)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C5.96243 0 3.5 2.46243 3.5 5.5C3.5 8.53757 5.96243 11 9 11C12.0376 11 14.5 8.53757 14.5 5.5C14.5 2.46243 12.0376 0 9 0ZM5.5 5.5C5.5 3.567 7.067 2 9 2C10.933 2 12.5 3.567 12.5 5.5C12.5 7.433 10.933 9 9 9C7.067 9 5.5 7.433 5.5 5.5Z" fill="#000000"/>
+    <path d="M15.5 0C14.9477 0 14.5 0.447715 14.5 1C14.5 1.55228 14.9477 2 15.5 2C17.433 2 19 3.567 19 5.5C19 7.433 17.433 9 15.5 9C14.9477 9 14.5 9.44771 14.5 10C14.5 10.5523 14.9477 11 15.5 11C18.5376 11 21 8.53757 21 5.5C21 2.46243 18.5376 0 15.5 0Z" fill="#000000"/>
+    <path d="M19.0837 14.0157C19.3048 13.5096 19.8943 13.2786 20.4004 13.4997C22.5174 14.4246 24 16.538 24 19V21C24 21.5523 23.5523 22 23 22C22.4477 22 22 21.5523 22 21V19C22 17.3613 21.0145 15.9505 19.5996 15.3324C19.0935 15.1113 18.8625 14.5217 19.0837 14.0157Z" fill="#000000"/>
+    <path d="M6 13C2.68629 13 0 15.6863 0 19V21C0 21.5523 0.447715 22 1 22C1.55228 22 2 21.5523 2 21V19C2 16.7909 3.79086 15 6 15H12C14.2091 15 16 16.7909 16 19V21C16 21.5523 16.4477 22 17 22C17.5523 22 18 21.5523 18 21V19C18 15.6863 15.3137 13 12 13H6Z" fill="#000000"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_1251_98416">
+    <rect width="24" height="24" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+                        </div>
+                        <div class="footer_text">
+                            Наразі зарестровано
+                        </div>
+                        <div class="footer_text_all">
+                            22 500
+                        </div>
+                    </div>
+                    <div class="footer_status">
+                        <div class="footer_icon">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <circle fill="#494c4e" cx="11.997" cy="18" r="1"/>
+  <path fill="#494c4e" d="M18 13c-.198 0-.397-.058-.572-.18-5.77-4.038-10.748-.084-10.798-.044-.43.35-1.06.283-1.406-.147-.35-.43-.282-1.064.146-1.413.062-.05 6.214-4.935 13.202-.044.453.317.563.943.248 1.397-.194.28-.505.43-.82.43z"/>
+  <path fill="#494c4e" d="M21 10c-.193 0-.388-.055-.56-.172C11.173 3.546 3.72 9.7 3.644 9.763c-.423.36-1.053.303-1.41-.12-.354-.424-.302-1.058.12-1.415.086-.072 8.7-7.184 19.205-.065.456.31.576.934.27 1.394-.195.288-.51.443-.83.443zm-6.002 6c-.197 0-.396-.058-.57-.18-2.552-1.776-4.713-.113-4.803-.04-.43.343-1.058.273-1.404-.157-.342-.43-.28-1.055.148-1.403 1.157-.945 4.153-2.17 7.203-.046.455.316.567.94.25 1.395-.193.28-.504.43-.82.43z"/>
+</svg>
+                        </div>
+                        <div class="footer_text">
+                            Онлайн
+                        </div>
+                        <div class="footer_text_all">
+                            7 888
+                        </div>
+                    </div>
+                    <div class="footer_status">
+                        <div class="footer_icon">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 12L11 14L15 9.99999M20 12C20 16.4611 14.54 19.6937 12.6414 20.683C12.4361 20.79 12.3334 20.8435 12.191 20.8712C12.08 20.8928 11.92 20.8928 11.809 20.8712C11.6666 20.8435 11.5639 20.79 11.3586 20.683C9.45996 19.6937 4 16.4611 4 12V8.21759C4 7.41808 4 7.01833 4.13076 6.6747C4.24627 6.37113 4.43398 6.10027 4.67766 5.88552C4.9535 5.64243 5.3278 5.50207 6.0764 5.22134L11.4382 3.21067C11.6461 3.13271 11.75 3.09373 11.857 3.07827C11.9518 3.06457 12.0482 3.06457 12.143 3.07827C12.25 3.09373 12.3539 3.13271 12.5618 3.21067L17.9236 5.22134C18.6722 5.50207 19.0465 5.64243 19.3223 5.88552C19.566 6.10027 19.7537 6.37113 19.8692 6.6747C20 7.01833 20 7.41808 20 8.21759V12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        </div>
+                        <div class="footer_text">
+                            Адміністрація
+                        </div>
+                    </div>
+                    <div class="footer_status">
+                        <div class="footer_icon">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 20.087H8.61029C8.95063 20.087 9.28888 20.1275 9.61881 20.2085L12.3769 20.8788C12.9753 21.0246 13.5988 21.0387 14.2035 20.9213L17.253 20.328C18.0585 20.1711 18.7996 19.7853 19.3803 19.2204L21.5379 17.1216C22.154 16.5233 22.154 15.5523 21.5379 14.953C20.9832 14.4133 20.1047 14.3526 19.4771 14.8102L16.9626 16.6447C16.6025 16.908 16.1643 17.0497 15.7137 17.0497H13.2855L14.8311 17.0497C15.7022 17.0497 16.4079 16.3632 16.4079 15.5158V15.209C16.4079 14.5054 15.9156 13.8919 15.2141 13.7218L12.8286 13.1416C12.4404 13.0475 12.0428 12.9999 11.6431 12.9999C10.6783 12.9999 8.93189 13.7987 8.93189 13.7987L6 15.0248M2 14.5999L2 20.3999C2 20.9599 2 21.24 2.10899 21.4539C2.20487 21.642 2.35785 21.795 2.54601 21.8909C2.75992 21.9999 3.03995 21.9999 3.6 21.9999H4.4C4.96005 21.9999 5.24008 21.9999 5.45399 21.8909C5.64215 21.795 5.79513 21.642 5.89101 21.4539C6 21.24 6 20.9599 6 20.3999V14.5999C6 14.0398 6 13.7598 5.89101 13.5459C5.79513 13.3577 5.64215 13.2048 5.45399 13.1089C5.24008 12.9999 4.96005 12.9999 4.4 12.9999H3.6C3.03995 12.9999 2.75992 12.9999 2.54601 13.1089C2.35785 13.2048 2.20487 13.3577 2.10899 13.5459C2 13.7598 2 14.0398 2 14.5999ZM17.1914 3.59215C16.5946 2.34329 15.2186 1.68168 13.8804 2.32027C12.5423 2.95886 11.9722 4.47328 12.5325 5.80272C12.8787 6.62435 13.8707 8.2199 14.5781 9.31893C14.8394 9.725 14.9701 9.92804 15.161 10.0468C15.3247 10.1487 15.5297 10.2036 15.7224 10.1972C15.9471 10.1898 16.1618 10.0793 16.5911 9.85832C17.7532 9.26021 19.4101 8.37445 20.1208 7.83602C21.2707 6.96481 21.5556 5.36347 20.6947 4.14614C19.8337 2.9288 18.3327 2.80902 17.1914 3.59215Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        </div>
+                        <div class="footer_text">
+                            Допомога
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            </div>
+            
+        </div>
+    </main>
+    <!-- <script src="./js/analytics.js"></script>
+    <script src="./js/fbevents.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/vendor.js"></script> -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
